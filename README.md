@@ -1,2 +1,3 @@
-# Kivolatro
-A blue archive balatro mod 
+Kivolatro
+a mod about blue archive 
+

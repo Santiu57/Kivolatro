@@ -1,0 +1,14 @@
+
+{
+	"id": "kivolatro",
+	"name": "Kivolatro",
+	"display_name": "Kivolatro",
+	"author": ["Santiu57"],
+	"description": "A BA mod",
+	"prefix": "kivo",
+	"main_file": "Kivolatro.lua",
+	"priority": -16369,
+	"badge_colour": "B2FFFF",
+	"badge_text_colour": "060d66",
+	"version": "0.2.2"
+}
