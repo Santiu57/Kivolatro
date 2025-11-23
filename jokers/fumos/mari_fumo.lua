@@ -1,0 +1,47 @@
+SMODS.Joker {
+    key = 'mari_fumo',
+    loc_txt = {
+        name = '{V:2}Mari{} Fumo',
+        text = {"at the {C:attention}end of round{}", "{C:gold}+#1#${} dollars for each",
+                "{V:1}fumo joker{} in possession", "{C:inactive}(Currently #2#){}"}
+    },
+    atlas = 'Spades_Jokers',
+    rarity = "kivo_fumo",
+    cost = Kivolatro.fumo_cost,
+    unlocked = true,
+    discovered = true,
+    blueprint_compat = false,
+    eternal_compat = true,
+    perishable_compat = true,
+    pos = {
+        x = 6,
+        y = 2
+    },
+    soul_pos = {
+        x = 4,
+        y = 2
+    },
+    config = {
+        extra = {
+            dollars = 4,
+            fumos = 0
+        }
+    },
+    loc_vars = function(self, info_queue, card)
+        return {
+            vars = {
+                card.ability.extra.dollars,
+                card.ability.extra.fumos,
+                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.colors.mari)}
+            }
+        }
+    end,
+    calculate = function(self, card, context)
+        card.ability.extra.fumos = Kivolatro.fumo_count()
+        if context.end_of_round and context.cardarea == G.jokers then
+            return {
+                dollars = card.ability.extra.dollars * card.ability.extra.fumos
+            }
+        end
+    end
+}
