@@ -33,7 +33,7 @@ SMODS.Joker {
         return {
             vars = {
                 card.ability.extra.retriggers,
-                colours = {HEX(Kivolatro.colors.mari), HEX(Kivolatro.colors.student)}
+                colours = {HEX(Kivolatro.student_Colors.mari), HEX(Kivolatro.colors.student)}
             }
         }
     end,
@@ -46,11 +46,11 @@ SMODS.Joker {
             func = function()
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = "With Sensei's cheering,",
-                    colour = HEX(Kivolatro.colors.mari)
+                    colour = HEX(Kivolatro.student_Colors.mari)
                 })
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = "I feel like I can do anything.",
-                    colour = HEX(Kivolatro.colors.mari)
+                    colour = HEX(Kivolatro.student_Colors.mari)
                 })
                 return true
             end

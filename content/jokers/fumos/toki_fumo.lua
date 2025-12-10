@@ -1,7 +1,7 @@
 SMODS.Joker {
     key = 'toki_fumo',
     loc_txt = {
-        name = 'Toki Fumo',
+        name = '{V:2}Toki{} Fumo',
         text = {"When {C:attention}skipping{} a blind", "Creates random {C:attention}tags{}",
                 "by the number of {V:1}fumos{}", "{C:inactive}(Currently #1#){}"}
     },
@@ -30,7 +30,7 @@ SMODS.Joker {
         return {
             vars = {
                 card.ability.extra.fumos,
-                colours = {HEX(Kivolatro.colors.fumo)}
+                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.student_Colors.toki)}
             }
         }
     end,

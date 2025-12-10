@@ -9,8 +9,8 @@ SMODS.Consumable {
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                colours = {HEX(Kivolatro.colors.mari_color), HEX(Kivolatro.colors.Kivolatro.colors.gehena),
-                           HEX(Kivolatro.colors.Kivolatro.colors.millennium)}
+                colours = {HEX(Kivolatro.student_Colors.mari), HEX(Kivolatro.student_Colors.sakurako),
+                           HEX(Kivolatro.colors.millennium)}
             }
         }
     end

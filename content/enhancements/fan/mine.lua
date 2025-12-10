@@ -14,7 +14,7 @@ SMODS.Enhancement {
     },
     loc_vars = function(self, info_queue, card)
         return {
-            vars = {card.ability.chips}
+            vars = {card.ability.x_chips}
         }
     end,
     calculate = function(self, card, context)

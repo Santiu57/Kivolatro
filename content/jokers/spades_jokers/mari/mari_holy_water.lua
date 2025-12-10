@@ -33,7 +33,7 @@ SMODS.Joker {
             vars = {
                 card.ability.extra.dollars,
                 card.ability.extra.dollars_mod,
-                colours = {G.C.SUITS.Spades, HEX(Kivolatro.colors.mari)}
+                colours = {G.C.SUITS.Spades, HEX(Kivolatro.student_Colors.mari)}
             }
         }
     end,

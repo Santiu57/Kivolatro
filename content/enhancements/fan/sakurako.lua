@@ -15,8 +15,7 @@ SMODS.Enhancement {
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                card.ability.mult,
-                colours = {HEX(Kivolatro.colors.mari)}
+                card.ability.x_mult,
             }
         }
     end,

@@ -1,7 +1,7 @@
 SMODS.Joker {
     key = 'karin_fumo', -- a bit broken with blue edition or duplicates
     loc_txt = {
-        name = 'Karin Fumo',
+        name = '{V:2}Karin{} Fumo',
         text = {"Divides the {C:attention}needed score{}", "by the {C:attention}number{} of {V:1}fumo{}",
                 "{V:1}jokers{} on possesion", "{C:inactive}(Currently #1#){}"}
     },
@@ -32,8 +32,7 @@ SMODS.Joker {
         return {
             vars = {
                 card.ability.extra.fumos,
-                "fumo",
-                colours = {HEX(Kivolatro.colors.fumo)}
+                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.student_Colors.karin)}
             }
         }
     end,

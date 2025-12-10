@@ -30,7 +30,7 @@ SMODS.Joker { -- Art:https://danbooru.donmai.us/posts/7272483
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                colours = {HEX(Kivolatro.colors.mari)}
+                colours = {HEX(Kivolatro.student_Colors.mari)}
             }
         }
     end,
@@ -42,11 +42,11 @@ SMODS.Joker { -- Art:https://danbooru.donmai.us/posts/7272483
             func = function()
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = "Grace be with you.",
-                    colour = HEX(Kivolatro.colors.mari)
+                    colour = HEX(Kivolatro.student_Colors.mari)
                 })
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = "I pray you have a nice day today.",
-                    colour = HEX(Kivolatro.colors.mari)
+                    colour = HEX(Kivolatro.student_Colors.mari)
                 })
                 return true
             end

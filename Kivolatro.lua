@@ -1,4 +1,5 @@
 Kivolatro = {}
+
 local kivolatro = SMODS.current_mod
 local filesystem = NFS or love.filesystem
 

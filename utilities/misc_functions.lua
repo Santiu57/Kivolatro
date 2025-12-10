@@ -638,23 +638,23 @@ local contador = 0
 local upd = Game.update
 function Game:update(dt)
     upd(self, dt)
-    if miyu_pat then
-        miyu_pat = miyu_pat + (dt * 3)
+    if MIYU_PAT then
+        MIYU_PAT = MIYU_PAT + (dt * 3)
     end
-    if mariuoh then
-        mariuoh = mariuoh + (dt * 3)
+    if MARIUOH then
+        MARIUOH = MARIUOH + (dt * 3)
     end
-    if seia_drift then
-        seia_drift = seia_drift + (dt * 3)
+    if SEIA_DRIFT then
+        SEIA_DRIFT = SEIA_DRIFT + (dt * 3)
     end
-    if q_booster_dt then
-        q_booster_dt = q_booster_dt + (dt)
+    if Q_BOOSTER then
+        Q_BOOSTER = Q_BOOSTER + (dt)
     end
 
     -- miyu pat animation
-    if G.P_CENTERS and G.P_CENTERS.j_kivo_miyu_pat and miyu_pat > 0.1 then
-        miyu_pat = 0
-        local miyupatbj = G.P_CENTERS.j_kivo_miyu_pat
+    if G.P_CENTERS and G.P_CENTERS.j_kivo_MIYU_PAT and MIYU_PAT > 0.1 then
+        MIYU_PAT = 0
+        local miyupatbj = G.P_CENTERS.j_kivo_MIYU_PAT
         if miyupatbj.pos.x == 2 and miyupatbj.pos.y == 1 then
             miyupatbj.pos.x = 0
             miyupatbj.pos.y = 0
@@ -667,8 +667,8 @@ function Game:update(dt)
     end
 
     -- mariuoh animation
-    if G.P_CENTERS and G.P_CENTERS.j_kivo_mariuoh and mariuoh > 0.1 then
-        mariuoh = 0
+    if G.P_CENTERS and G.P_CENTERS.j_kivo_mariuoh and MARIUOH > 0.1 then
+        MARIUOH = 0
         local mariuohbj = G.P_CENTERS.j_kivo_mariuoh
         if mariuohbj.pos.x == 22 and mariuohbj.pos.y == 7 then
             mariuohbj.pos.x = 0
@@ -682,8 +682,8 @@ function Game:update(dt)
     end
 
     -- seia drift animation
-    if G.P_CENTERS and G.P_CENTERS.j_kivo_seia_drift and seia_drift > 0.1 then
-        seia_drift = 0
+    if G.P_CENTERS and G.P_CENTERS.j_kivo_seia_drift and SEIA_DRIFT > 0.1 then
+        SEIA_DRIFT = 0
         local seia_drift = G.P_CENTERS.j_kivo_seia_drift
         if seia_drift.pos.x == 52 and seia_drift.pos.y == 0 then
             seia_drift.pos.x = 0
@@ -697,8 +697,8 @@ function Game:update(dt)
     end
 
     -- ??? booster animation
-    if G.P_CENTERS and G.P_CENTERS.p_kivo_q_booster and q_booster_dt > 0.1 then
-        q_booster_dt = 0
+    if G.P_CENTERS and G.P_CENTERS.p_kivo_q_booster and Q_BOOSTER > 0.1 then
+        Q_BOOSTER = 0
         local p_kivo_q_booster = G.P_CENTERS.p_kivo_q_booster
         if p_kivo_q_booster.pos.x == 9 and p_kivo_q_booster.pos.y == 5 then
             p_kivo_q_booster.pos.x = 0

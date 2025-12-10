@@ -2,7 +2,7 @@ SMODS.Enhancement {
     key = "fan_mari",
     atlas = "kivo_enhancements",
     loc_txt = {
-        name = "Fan Card ({V:1}Mari{})",
+        name = "Fan Card (Mari)",
         text = {"{X:chips,C:white}X#1#{} chips when score", "{X:mult,C:white}X#2#{} mult when score"}
     },
     pos = {
@@ -16,9 +16,8 @@ SMODS.Enhancement {
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                card.ability.chips,
-                card.ability.mult,
-                colours = {HEX(Kivolatro.colors.mari)}
+                card.ability.x_chips,
+                card.ability.x_mult,
             }
         }
     end,

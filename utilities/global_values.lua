@@ -45,7 +45,6 @@ Kivolatro.colors = {
     blue = "004DC8",
     blessed = "FFD877",
     costume = "898B98",
-    mari = "FABC81",
     trinity = "F4BB51", -- boosters ready
     gehena = "AE3232", -- boosters ready
     millennium = "8AB6F2", -- boosters ready
@@ -57,6 +56,23 @@ Kivolatro.colors = {
     red_winter = "BA3556",
     abydos = "61C8D9",
     agent = "D8D8D8"
+}
+
+Kivolatro.student_Colors = {
+    mari = "FABC81",
+    sakurako = "ECE8E5",
+    hinata = "FFFA8F",
+    hina = "97668D",
+    iori = "D3D9DC",
+    chinatsu = "E79F5F",
+    ako = "9BB3D8",
+    arona = "AECADA",
+    plana = "D7C9D2",
+    karin = "7E6287",
+    toki = "5BD1E4",
+    akane = "EBDEC3",
+    asuna = "457FA2",
+    neru = "F39E97",
 }
 
 -- boss blinds colors
@@ -114,7 +130,7 @@ Kivolatro.music = {
 
 -- for animations 
 
-miyu_pat = 1
-mariuoh = 1
-seia_drift = 1
-q_booster_dt = 1
+MIYU_PAT = 1
+MARIUOH = 1
+SEIA_DRIFT = 1
+Q_BOOSTER = 1

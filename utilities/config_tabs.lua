@@ -78,7 +78,7 @@ local kivoTabs = function()
     return {{
         label = "Musics",
         tab_definition_function = function()
-            cry_nodes = {{
+            kivo_nodes = {{
                 n = G.UIT.R,
                 config = {
                     align = "cm"
@@ -113,7 +113,7 @@ local kivoTabs = function()
                 },
                 nodes = {settings}
             }
-            cry_nodes[#cry_nodes + 1] = config
+            kivo_nodes[#kivo_nodes + 1] = config
             return {
                 n = G.UIT.ROOT,
                 config = {
@@ -125,7 +125,7 @@ local kivoTabs = function()
                     padding = 0.2,
                     colour = G.C.BLACK
                 },
-                nodes = cry_nodes
+                nodes = kivo_nodes
             }
         end
     }}

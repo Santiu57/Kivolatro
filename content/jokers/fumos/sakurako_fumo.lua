@@ -1,8 +1,8 @@
 SMODS.Joker {
-    key = 'hina_fumo',
+    key = 'sakurako_fumo',
     loc_txt = {
-        name = '{V:2}Hina{} Fumo',
-        text = {'WIP'}
+        name = '{V:2}Sakurako{} Fumo',
+        text = {"WIP"}
     },
     atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
@@ -17,7 +17,7 @@ SMODS.Joker {
         y = 5
     },
     soul_pos = {
-        x = 3,
+        x = 1,
         y = 0
     },
     config = {
@@ -29,7 +29,7 @@ SMODS.Joker {
         return {
             vars = {
                 card.ability.extra.fumos,
-                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.student_Colors.hina)}
+                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.student_Colors.sakurako)}
             }
         }
     end,

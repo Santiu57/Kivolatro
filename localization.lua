@@ -14,7 +14,7 @@ return {
     costumes_students = {
         idol = {
             name = {"Students"},
-            text = {"{V:1}Mari{}", "Sakurako", "Mine"}
+            text = {"{V:1}Mari{}", "{V:2}Sakurako{}", "{V:3}Mine{}"}
         }
     },
     boss_blinds = {

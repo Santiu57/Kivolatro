@@ -57,10 +57,10 @@ if Kivolatro_config.menu_change then
             func = function()
                 if change_context == "splash" then
                     newcard.states.visible = true
-                    newcard:start_materialize({HEX(Kivolatro.colors.mari), HEX(Kivolatro.colors.mari)}, true, 2.5)
+                    newcard:start_materialize({HEX(Kivolatro.student_Colors.mari), HEX(Kivolatro.student_Colors.mari)}, true, 2.5)
                 else
                     newcard.states.visible = true
-                    newcard:start_materialize({HEX(Kivolatro.colors.mari), HEX(Kivolatro.colors.mari)}, nil, 1.2)
+                    newcard:start_materialize({HEX(Kivolatro.student_Colors.mari), HEX(Kivolatro.student_Colors.mari)}, nil, 1.2)
                 end
                 return true
             end

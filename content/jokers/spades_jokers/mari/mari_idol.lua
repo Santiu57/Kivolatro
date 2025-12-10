@@ -37,7 +37,7 @@ SMODS.Joker {
         return {
             vars = {
                 card.ability.extra.mult,
-                colours = {HEX(Kivolatro.colors.mari), HEX(Kivolatro.colors.resource)}
+                colours = {HEX(Kivolatro.student_Colors.mari), HEX(Kivolatro.colors.resource)}
             }
         }
     end,
@@ -50,11 +50,11 @@ SMODS.Joker {
             func = function()
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = "If my song can make Sensei happy... ",
-                    colour = HEX(Kivolatro.colors.mari)
+                    colour = HEX(Kivolatro.student_Colors.mari)
                 })
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = "There's nothing more I can ask for.",
-                    colour = HEX(Kivolatro.colors.mari)
+                    colour = HEX(Kivolatro.student_Colors.mari)
                 })
                 return true
             end
@@ -79,7 +79,7 @@ SMODS.Joker {
                 context.full_hand[1]:set_ability((G.P_CENTERS.m_kivo_fan_mari))
                 return {
                     message = "Idol!",
-                    colour = HEX(Kivolatro.colors.mari)
+                    colour = HEX(Kivolatro.student_Colors.mari)
                 }
             end
         end

@@ -69,8 +69,13 @@ Kivolatro.jokers = {
     },
     hearts_jokers = {},
     clubs_jokers = {},
-    fumos = {"mari_fumo", "karin_fumo", "kanna_fumo", "haruna_fumo", "haruka_fumo", "toki_fumo", "saori_fumo",
-             "shiroko_fumo", "hina_fumo", "yuuka_fumo"},
+    fumos = {
+    "mari_fumo", "sakurako_fumo", "hinata_fumo", 
+    "hina_fumo", "iori_fumo", "chinatsu_fumo","ako_fumo", 
+    "arona_fumo", "plana_fumo",
+    "karin_fumo", "toki_fumo", "akane_fumo", "asuna_fumo", "neru_fumo",
+    "kanna_fumo", "haruna_fumo", "haruka_fumo", "saori_fumo",
+             "shiroko_fumo", "yuuka_fumo"},
     blind_jokers = {"greg_organ"}
 }
 
