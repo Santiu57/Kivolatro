@@ -74,6 +74,7 @@ SMODS.Joker {
         end
         if context.end_of_round and context.cardarea == G.jokers and not context.retrigger_joker then
             card.ability.extra.type = Kivolatro.random_hand("big_eye")
+            card.ability.extra.iscard = false
             return {
                 message = "Reloading!",
                 colour = HEX("ada8b5"),

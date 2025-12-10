@@ -1,11 +1,22 @@
 SMODS.Sound({
     key = "Seia_sw_music",
-    path = "Seia_sw_music.ogg",
+    path = "Track_299_looped.ogg",
     sync = true,
     pitch = 1,
     select_music_track = function()
         return Kivolatro_config.Kivolatro.Always_Drifting or next(find_joker("seia_drift")) or
                    next(find_joker("j_kivo_seia_drift"))
+    end
+})
+
+SMODS.Sound({
+    key = "kikyou_music",
+    path = "kikyou_music.ogg",
+    sync = true,
+    pitch = 1,
+    select_music_track = function()
+        return Kivolatro_config.Kivolatro.Always_Drifting or next(find_joker("mari_fumo")) or
+                   next(find_joker("j_kivo_mari_fumo"))
     end
 })
 

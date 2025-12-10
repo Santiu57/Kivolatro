@@ -5,7 +5,7 @@ SMODS.Joker {
         text = {"at the {C:attention}end of round{}", "{C:gold}+#1#${} dollars for each",
                 "{V:1}fumo joker{} in possession", "{C:inactive}(Currently #2#){}"}
     },
-    atlas = 'Spades_Jokers',
+    atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
     cost = Kivolatro.fumo_cost,
     unlocked = true,
@@ -14,12 +14,12 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     pos = {
-        x = 6,
-        y = 2
+        x = 8,
+        y = 5
     },
     soul_pos = {
-        x = 4,
-        y = 2
+        x = 0,
+        y = 0
     },
     config = {
         extra = {

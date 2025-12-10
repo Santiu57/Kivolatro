@@ -4,7 +4,7 @@ SMODS.Joker {
         name = 'Saori Fumo',
         text = {'WIP'}
     },
-    atlas = 'Spades_Jokers',
+    atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
     cost = Kivolatro.fumo_cost,
     unlocked = true,
@@ -13,12 +13,12 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     pos = {
-        x = 6,
-        y = 9
+        x = 8,
+        y = 5
     },
     soul_pos = {
-        x = 4,
-        y = 9
+        x = 3,
+        y = 3
     },
     config = {
         extra = {}

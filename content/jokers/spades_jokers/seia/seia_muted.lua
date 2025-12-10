@@ -5,7 +5,7 @@ SMODS.Joker {
         text = {'WIP'}
     },
     atlas = 'Spades_Jokers',
-    rarity = "kivo_arm",
+    rarity = "kivo_meme",
     cost = Kivolatro.arm_cost,
     unlocked = true,
     discovered = true,

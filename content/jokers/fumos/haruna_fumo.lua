@@ -6,7 +6,7 @@ SMODS.Joker {
                 'your most {C:attention}played hand{}', "{C:inactive}(Currently #2#/#1#){}",
                 "{C:inactive}Must have room{}"}
     },
-    atlas = 'Spades_Jokers',
+    atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
     cost = Kivolatro.fumo_cost,
     unlocked = true,
@@ -15,12 +15,12 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     pos = {
-        x = 6,
+        x = 8,
         y = 5
     },
     soul_pos = {
-        x = 4,
-        y = 5
+        x = 7,
+        y = 3
     },
     config = {
         extra = {

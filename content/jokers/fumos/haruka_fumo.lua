@@ -15,8 +15,8 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     pos = {
-        x = 2,
-        y = 4
+        x = 8,
+        y = 5
     },
     soul_pos = {
         x = 0,

@@ -5,7 +5,7 @@ SMODS.Joker {
         text = {"When {C:attention}skipping{} a blind", "Creates random {C:attention}tags{}",
                 "by the number of {V:1}fumos{}", "{C:inactive}(Currently #1#){}"}
     },
-    atlas = 'Spades_Jokers',
+    atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
     cost = Kivolatro.fumo_cost,
     unlocked = true,
@@ -14,12 +14,12 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     pos = {
-        x = 6,
-        y = 7
+        x = 8,
+        y = 5
     },
     soul_pos = {
-        x = 4,
-        y = 7
+        x = 1,
+        y = 1
     },
     config = {
         extra = {

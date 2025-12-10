@@ -5,7 +5,7 @@ SMODS.Joker {
         text = {"Divides the {C:attention}needed score{}", "by the {C:attention}number{} of {V:1}fumo{}",
                 "{V:1}jokers{} on possesion", "{C:inactive}(Currently #1#){}"}
     },
-    atlas = 'Spades_Jokers',
+    atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
     cost = Kivolatro.fumo_cost,
     unlocked = true,
@@ -14,12 +14,12 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     pos = {
-        x = 6,
-        y = 3
+        x = 8,
+        y = 5
     },
     soul_pos = {
-        x = 4,
-        y = 3
+        x = 0,
+        y = 1
     },
     config = {
         extra = {
@@ -45,7 +45,7 @@ SMODS.Joker {
             G.HUD_blind:recalculate()
             return {
                 message = "Fumos!",
-                colour = HEX(fumos.colors.fumo)
+                colour = HEX(Kivolatro.colors.fumo)
             }
         end
         card.ability.extra.fumos = fumos
