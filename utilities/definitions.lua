@@ -74,8 +74,14 @@ Kivolatro.jokers = {
     "hina_fumo", "iori_fumo", "chinatsu_fumo","ako_fumo", 
     "arona_fumo", "plana_fumo",
     "karin_fumo", "toki_fumo", "akane_fumo", "asuna_fumo", "neru_fumo",
-    "kanna_fumo", "haruna_fumo", "haruka_fumo", "saori_fumo",
-             "shiroko_fumo", "yuuka_fumo"},
+    "noa_fumo", "yuuka_fumo", "koyuki_fumo","rio_fumo",
+    "haruka_fumo", "aru_fumo", "kayoko_fumo","mutsuki_fumo",
+    "shiroko_fumo", "ayane_fumo", "serika_fumo", "hoshino_fumo", "nonomi_fumo",
+    "kanna_fumo", "fubuki_fumo", "kirino_fumo",
+    "saori_fumo", "atsuko_fumo", "misaki_fumo", "hiyori_fumo",
+    "haruna_fumo", "junko_fumo", "izumi_fumo","akari_fumo",
+    "koharu_fumo","hanako_fumo","hifumi_fumo","azusa_fumo"
+             },
     blind_jokers = {"greg_organ"}
 }
 

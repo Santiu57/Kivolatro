@@ -1,7 +1,7 @@
 SMODS.Joker {
     key = 'haruka_fumo',
     loc_txt = {
-        name = 'Haruka Fumo',
+        name = '{V:2}Haruka{} Fumo',
         text = {"Every {C:attention}#2#{} {C:inactive}[#3#]{} blinds", "Creates {C:purple}Tarot cards{}",
                 "by the {C:attention}number{} of {V:1}fumo{}", "{V:1}jokers{} on possesion",
                 "{C:inactive}(Currently #1#){}"}
@@ -35,7 +35,7 @@ SMODS.Joker {
                 card.ability.extra.fumos,
                 card.ability.extra.needed,
                 card.ability.extra.blinds,
-                colours = {HEX(Kivolatro.colors.fumo)}
+                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.student_Colors.haruka)}
             }
         }
     end,

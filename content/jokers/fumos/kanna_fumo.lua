@@ -1,7 +1,7 @@
 SMODS.Joker {
     key = 'kanna_fumo',
     loc_txt = {
-        name = 'Kanna Fumo',
+        name = '{V:2}Kanna{} Fumo',
         text = {'Next {C:green}shop{} has', 'an extra {C:attention}free{} {V:1}school pack{}',
                 "after defeat a {C:attention}boss blind{}"}
     },
@@ -28,7 +28,7 @@ SMODS.Joker {
         info_queue[#info_queue + 1] = G.P_CENTERS.c_kivo_desc_school_packs
         return {
             vars = {
-                colours = {Kivolatro.schools_gradient}
+                colours = {Kivolatro.schools_gradient, HEX(Kivolatro.student_Colors.kanna)}
             }
         }
     end,

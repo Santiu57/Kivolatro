@@ -1,7 +1,7 @@
 SMODS.Joker {
     key = 'haruna_fumo',
     loc_txt = {
-        name = 'Haruna Fumo',
+        name = '{V:1}Haruna{} Fumo',
         text = {'Every {C:attention}#1#{} {C:green}rerolls{} adds', "the {C:blue}planet{} card of",
                 'your most {C:attention}played hand{}', "{C:inactive}(Currently #2#/#1#){}",
                 "{C:inactive}Must have room{}"}
@@ -33,7 +33,7 @@ SMODS.Joker {
             vars = {
                 card.ability.extra.needed,
                 card.ability.extra.rerolls,
-                colours = {G.C.SUITS.Spades}
+                colours = {HEX(Kivolatro.student_Colors.haruna)}
             }
         }
     end,

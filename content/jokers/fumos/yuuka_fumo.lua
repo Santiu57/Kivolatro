@@ -1,7 +1,7 @@
 SMODS.Joker {
     key = 'yuuka_fumo',
     loc_txt = {
-        name = 'Yuuka Fumo',
+        name = '{V:2}Yuuka{} Fumo',
         text = {"+1 {C:mult} mult {} per Fumo you own."}
     },
     atlas = 'fumo_atlas',
@@ -29,7 +29,7 @@ SMODS.Joker {
         return {
             vars = {
                 card.ability.extra.fumos,
-                colours = {HEX(Kivolatro.colors.fumo)}
+                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.student_Colors.yuuka)}
             }
         }
     end,

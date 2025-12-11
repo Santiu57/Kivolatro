@@ -1,7 +1,7 @@
 SMODS.Joker {
     key = 'shiroko_fumo',
     loc_txt = {
-        name = 'Shiroko Fumo',
+        name = '{V:2}Shiroko{} Fumo',
         text = {'WIP'}
     },
     atlas = 'fumo_atlas',
@@ -26,8 +26,7 @@ SMODS.Joker {
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                "Spade",
-                colours = {G.C.SUITS.Spades}
+                colours = {HEX(Kivolatro.colors.fumo),HEX(Kivolatro.student_Colors.shiroko)}
             }
         }
     end,

@@ -59,20 +59,20 @@ Kivolatro.colors = {
 }
 
 Kivolatro.student_Colors = {
-    mari = "FABC81",
-    sakurako = "ECE8E5",
-    hinata = "FFFA8F",
-    hina = "97668D",
-    iori = "D3D9DC",
-    chinatsu = "E79F5F",
-    ako = "9BB3D8",
-    arona = "AECADA",
-    plana = "D7C9D2",
-    karin = "7E6287",
-    toki = "5BD1E4",
-    akane = "EBDEC3",
-    asuna = "457FA2",
-    neru = "F39E97",
+    mari = "FABC81", sakurako = "ECE8E5", hinata = "FFFA8F",
+    hina = "97668D", iori = "D3D9DC", chinatsu = "E79F5F", ako = "9BB3D8",
+    arona = "AECADA", plana = "D7C9D2",
+    karin = "7E6287", toki = "5BD1E4", akane = "EBDEC3", asuna = "457FA2", neru = "F39E97",
+    noa = "A0CFEA", yuuka = "615C97", koyuki = "FDC8DA", rio = "C0474A",
+    haruka = "564C89", aru = "E7999D", kayoko = "C0C0C0", mutsuki = "A25765",
+    shiroko = "82FCFD", ayane = "E2524C", serika = "FF70B6", hoshino = "FDDFE5", nonomi = "D1FC01",
+    kanna = "DBFFFF", fubuki = "FFB4E4", kirino = "A5CAFE",
+    saori = "B9D6FF", atsuko = "DDC8E6", misaki = "F7679E", hiyori = "C5FDFE",
+    haruna = "CF5B46", junko = "EF386F", izumi = "FFFFC7", akari = "FEF2CB",
+    koharu = "F6C2CB", hanako = "FAD0D5", hifumi = "FFFFC8", azusa = "EDD9F1",
+    michiru = "FF3186", tsukuyo = "9F76BD", izuna = "F52683",
+    airi = "A1EADD", yoshimi = "F5DFB4", natsu = "FDDCD5", kazusa = "F99DBF",
+    hare = "DDDE0B", chihiro = "7BDFFA", kotama = "B4B0F3", maki = "D86369"
 }
 
 -- boss blinds colors

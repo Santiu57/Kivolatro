@@ -1,7 +1,7 @@
 SMODS.Joker {
-    key = 'saori_fumo',
+    key = 'noa_fumo',
     loc_txt = {
-        name = '{V:2}Saori{} Fumo',
+        name = '{V:2}Noa{} Fumo',
         text = {"WIP"}
     },
     atlas = 'fumo_atlas',
@@ -9,7 +9,7 @@ SMODS.Joker {
     cost = Kivolatro.fumo_cost,
     unlocked = true,
     discovered = true,
-    blueprint_compat = true,
+    blueprint_compat = false,
     eternal_compat = true,
     perishable_compat = true,
     pos = {
@@ -17,8 +17,8 @@ SMODS.Joker {
         y = 5
     },
     soul_pos = {
-        x = 3,
-        y = 3
+        x = 5,
+        y = 1
     },
     config = {
         extra = {
@@ -29,11 +29,11 @@ SMODS.Joker {
         return {
             vars = {
                 card.ability.extra.fumos,
-                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.student_Colors.saori)}
+                colours = {HEX(Kivolatro.colors.fumo), HEX(Kivolatro.student_Colors.noa)}
             }
         }
     end,
     calculate = function(self, card, context)
-        card.ability.extra.fumos = Kivolatro.fumo_count()
+
     end
 }
