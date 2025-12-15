@@ -109,7 +109,7 @@ function Kivolatro.advanced_find_joker(name, rarity, edition, ability, non_debuf
                 if name and v.ability.name == name then
                     check = check + 1
                 end
-                if edition and (v.edition and v.edition.key == edition) --[[ make this use Kivolatro.safe_get later? if it's possible anyways]] then
+                if edition and (v.edition and v.edition.key == edition)  then
                     check = check + 1
                 end
                 if rarity then
@@ -225,12 +225,10 @@ end
 
 function Kivolatro.fumo_count()
     local fumocount = 0
-    if Kivolatro.safe_get(G, "jokers") then
-        for i = 1, #G.jokers.cards do
-            if G.jokers.cards[i]:is_rarity("kivo_fumo") then
-                fumocount = fumocount + 1
-            end
-        end
+    fumocount = #Kivolatro.advanced_find_joker(nil, {"kivo_fumo"}, nil, nil, true, "j")
+    local sakurakofumos = Kivolatro.advanced_find_joker("j_kivo_sakurako_fumo", nil, nil, nil, true, "j")
+    if #sakurakofumos >= 1 then
+        fumocount = fumocount * (2 ^ #sakurakofumos)
     end
     return fumocount
 end
@@ -296,7 +294,7 @@ function Kivolatro.all_jokers_edition(joker) -- if all jokers have edition, retu
 end
 
 Kivolatro.banned_keys = {"hand_size", "joker_slots", "hands", "discards", "extra_draws", "ante", "odds", "retriggers",
-                         "value", "needed", "scored", "destroyed", "rerolls", "fumos", "blinds"} -- keys that won't be multiplied
+                         "value", "needed", "scored", "destroyed", "rerolls", "fumos", "blinds", "div"} -- keys that won't be multiplied
 
 function Kivolatro.is_banned(key)
     for i = 1, #Kivolatro.banned_keys do

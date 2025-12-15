@@ -2,7 +2,11 @@ SMODS.Joker {
     key = 'sakurako_fumo',
     loc_txt = {
         name = '{V:2}Sakurako{} Fumo',
-        text = {"WIP"}
+        text = {
+        "Multiplies your", 
+        "{V:1}Fumos count{} by {C:attention}2{}.",
+        "{C:inactive}(Fumos: #1#){}"
+    }
     },
     atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
@@ -33,7 +37,22 @@ SMODS.Joker {
             }
         }
     end,
+    add_to_deck = function(self, card, from_debuff)
+        G.E_MANAGER:add_event(Event({
+                trigger = 'after',
+                delay = 0.15,
+                func = function()
+                    play_sound('kivo_sakurako_fumo_sound');
+                    return true
+                end
+            }))
+            delay(0.05)
+            card_eval_status_text(card, 'extra', nil, nil, nil, {
+                message = "Grace be upon you all",
+                colour = HEX(Kivolatro.student_Colors.sakurako)
+            })
+    end,
     calculate = function(self, card, context)
-
+        card.ability.extra.fumos = Kivolatro.fumo_count()
     end
 }

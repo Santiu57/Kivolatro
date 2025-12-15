@@ -21,8 +21,25 @@ SMODS.Sound {
 }
 
 SMODS.Sound {
+    key = "mari_fumo_sound",
+    path = "mari_cm5.ogg"
+}
+
+SMODS.Sound {
     key = "uohsound",
     path = "uoh.ogg"
+}
+
+--sakurako sounds
+SMODS.Sound {
+    key = "sakurako_fumo_sound",
+    path = "sakurako_tv1.ogg"
+}
+
+--hinata sounds
+SMODS.Sound {
+    key = "hinata_fumo_sound",
+    path = "hinata_ex2.ogg"
 }
 
 -- Miyu sounds

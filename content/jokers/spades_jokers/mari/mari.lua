@@ -41,11 +41,7 @@ SMODS.Joker { -- Art:https://danbooru.donmai.us/posts/7272483
             delay = 0.1,
             func = function()
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
-                    message = "Grace be with you.",
-                    colour = HEX(Kivolatro.student_Colors.mari)
-                })
-                card_eval_status_text(card, 'extra', nil, nil, nil, {
-                    message = "I pray you have a nice day today.",
+                    message = "Yes, gladly.",
                     colour = HEX(Kivolatro.student_Colors.mari)
                 })
                 return true

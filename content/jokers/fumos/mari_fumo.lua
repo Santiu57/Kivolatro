@@ -3,7 +3,7 @@ SMODS.Joker {
     loc_txt = {
         name = '{V:2}Mari{} Fumo',
         text = {"at the {C:attention}end of round{}", "{C:gold}+#1#${} dollars for each",
-                "{V:1}fumo joker{} in possession", "{C:inactive}(Currently #2#){}"}
+                "{V:1}fumo joker{} in possession", "{C:inactive}Fumos: #2#{}"}
     },
     atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
@@ -40,7 +40,11 @@ SMODS.Joker {
         card.ability.extra.fumos = Kivolatro.fumo_count()
         if context.end_of_round and context.cardarea == G.jokers then
             return {
-                dollars = card.ability.extra.dollars * card.ability.extra.fumos
+                dollars = card.ability.extra.dollars * card.ability.extra.fumos,
+                remove_default_message = true,
+                message = "+"..card.ability.extra.dollars * card.ability.extra.fumos.."$",
+                sound = 'kivo_mari_fumo_sound',
+                colour = HEX(Kivolatro.student_Colors.mari),
             }
         end
     end

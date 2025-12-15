@@ -45,11 +45,7 @@ SMODS.Joker {
             delay = 0.1,
             func = function()
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
-                    message = "With Sensei's cheering,",
-                    colour = HEX(Kivolatro.student_Colors.mari)
-                })
-                card_eval_status_text(card, 'extra', nil, nil, nil, {
-                    message = "I feel like I can do anything.",
+                    message = "I will do my best.",
                     colour = HEX(Kivolatro.student_Colors.mari)
                 })
                 return true

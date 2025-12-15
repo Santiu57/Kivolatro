@@ -3,7 +3,7 @@ SMODS.Joker {
     loc_txt = {
         name = '{V:2}Karin{} Fumo',
         text = {"Divides the {C:attention}needed score{}", "by the {C:attention}number{} of {V:1}fumo{}",
-                "{V:1}jokers{} on possesion", "{C:inactive}(Currently #1#){}"}
+                "{V:1}jokers{} on possesion", "{C:inactive}Fumos: #1#{}"}
     },
     atlas = 'fumo_atlas',
     rarity = "kivo_fumo",
