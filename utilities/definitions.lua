@@ -80,7 +80,8 @@ Kivolatro.jokers = {
     "kanna_fumo", "fubuki_fumo", "kirino_fumo",
     "saori_fumo", "atsuko_fumo", "misaki_fumo", "hiyori_fumo",
     "haruna_fumo", "junko_fumo", "izumi_fumo","akari_fumo",
-    "koharu_fumo","hanako_fumo","hifumi_fumo","azusa_fumo"
+    "koharu_fumo","hanako_fumo","hifumi_fumo","azusa_fumo",
+    "tsubaki_fumo","kaede_fumo","mimori_fumo",
              },
     blind_jokers = {"greg_organ"}
 }

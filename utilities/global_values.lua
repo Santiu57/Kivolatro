@@ -78,7 +78,9 @@ Kivolatro.student_Colors = {
     koharu = "F6C2CB", hanako = "FAD0D5", hifumi = "FFFFC8", azusa = "EDD9F1",
     michiru = "FF3186", tsukuyo = "9F76BD", izuna = "F52683",
     airi = "A1EADD", yoshimi = "F5DFB4", natsu = "FDDCD5", kazusa = "F99DBF",
-    hare = "DDDE0B", chihiro = "7BDFFA", kotama = "B4B0F3", maki = "D86369"
+    hare = "DDDE0B", chihiro = "7BDFFA", kotama = "B4B0F3", maki = "D86369",
+    tsubaki = "C73636", kaede = "FF84A8", mimori = "F7E0DC",
+
 }
 
 -- boss blinds colors
