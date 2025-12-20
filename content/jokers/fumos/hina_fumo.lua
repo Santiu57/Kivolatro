@@ -11,10 +11,9 @@ SMODS.Joker {
     discovered = true,
     blueprint_compat = false,
     eternal_compat = true,
-    perishable_compat = true,
     pos = {
-        x = 8,
-        y = 5
+        x = Kivolatro.back_fumos.x,
+        y = Kivolatro.back_fumos.y
     },
     soul_pos = {
         x = 3,

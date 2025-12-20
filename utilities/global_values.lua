@@ -30,6 +30,12 @@ Kivolatro.arm_cost = 4
 Kivolatro.item_cost = 5
 Kivolatro.q_cost = 7
 
+-- fumo positions
+Kivolatro.back_fumos = {
+    x = 8,
+    y = 6
+}
+
 -- colors
 Kivolatro.colors = {
     resource = "8b87c9", -- boosters ready
