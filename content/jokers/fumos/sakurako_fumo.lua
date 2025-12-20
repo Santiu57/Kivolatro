@@ -5,7 +5,7 @@ SMODS.Joker {
         text = {
         "Multiplies your", 
         "{V:1}Fumos count{} by {C:attention}2{}.",
-        "{C:inactive}(Fumos: #1#){}"
+        "{C:inactive}Fumos: #1#{}"
     }
     },
     atlas = 'fumo_atlas',
