@@ -6,11 +6,11 @@ SMODS.Enhancement {
         text = {"{X:mult,C:white}X#1#{} mult when score"}
     },
     pos = {
-        x = 3,
+        x = 4,
         y = 0
     },
     config = {
-        x_mult = 1.2
+        x_mult = 1.5
     },
     loc_vars = function(self, info_queue, card)
         return {

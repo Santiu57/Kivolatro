@@ -2,7 +2,7 @@ SMODS.Joker {
     key = 'time_of_secrecy',
     loc_txt = {
         name = 'Time of Secrecy',
-        text = {'{C:blue}Bonus cards{} have', '{C:green}#2# in #1# chance{} to change', "into {V:1}agent cards{}"}
+        text = {'Played {C:blue}Bonus cards{} have', '{C:green}#1# in #2# chance{} to change', "into {V:1}agent cards{}"}
     },
     atlas = 'Spades_Jokers',
     rarity = "kivo_arm",

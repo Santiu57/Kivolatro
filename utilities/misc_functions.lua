@@ -306,6 +306,10 @@ function Kivolatro.is_banned(key)
 end
 
 function Kivolatro.multiply_extras(joker, value)
+    if type(joker.ability.extra) == "number" then
+        joker.ability.extra = joker.ability.extra * value
+        return
+    end
     for k, v in pairs(joker.ability.extra) do
         if not Kivolatro.is_banned(k) and type(v) == "number" then
             joker.ability.extra[k] = v * value
@@ -650,9 +654,9 @@ function Game:update(dt)
     end
 
     -- miyu pat animation
-    if G.P_CENTERS and G.P_CENTERS.j_kivo_MIYU_PAT and MIYU_PAT > 0.1 then
+    if G.P_CENTERS and G.P_CENTERS.j_kivo_miyu_pat and MIYU_PAT > 0.1 then
         MIYU_PAT = 0
-        local miyupatbj = G.P_CENTERS.j_kivo_MIYU_PAT
+        local miyupatbj = G.P_CENTERS.j_kivo_miyu_pat
         if miyupatbj.pos.x == 2 and miyupatbj.pos.y == 1 then
             miyupatbj.pos.x = 0
             miyupatbj.pos.y = 0

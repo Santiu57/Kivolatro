@@ -6,11 +6,11 @@ SMODS.Enhancement {
         text = {"{X:chips,C:white}X#1#{} chips when score"}
     },
     pos = {
-        x = 4,
+        x = 3,
         y = 0
     },
     config = {
-        x_chips = 1.2
+        x_chips = 1.5
     },
     loc_vars = function(self, info_queue, card)
         return {

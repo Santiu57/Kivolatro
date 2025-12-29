@@ -10,8 +10,8 @@ SMODS.Enhancement {
         y = 0
     },
     config = {
-        x_chips = 1.1,
-        x_mult = 1.1
+        x_chips = 1.25,
+        x_mult = 1.25
     },
     loc_vars = function(self, info_queue, card)
         return {
