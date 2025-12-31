@@ -4,8 +4,12 @@ SMODS.Sound({
     sync = true,
     pitch = 1,
     select_music_track = function()
-        return Kivolatro_config.Kivolatro.Always_Drifting or next(find_joker("seia_drift")) or
-                   next(find_joker("j_kivo_seia_drift"))
+        if Kivolatro_config.Kivolatro.Always_Drifting then
+            return 99
+            else if next(find_joker("seia_drift")) or next(find_joker("j_kivo_seia_drift")) then
+                return 4
+            end
+        end
     end
 })
 
@@ -15,7 +19,7 @@ SMODS.Sound({
     sync = true,
     pitch = 1,
     select_music_track = function()
-        return not Kivolatro_config.Kivolatro.Always_Drifting or next(find_joker("mari_fumo")) or
+        return not Kivolatro_config.Kivolatro.Always_Drifting and next(find_joker("mari_fumo")) or
         next(find_joker("j_kivo_mari_fumo"))
     end
 })
@@ -26,7 +30,9 @@ SMODS.Sound({
     sync = true,
     pitch = 1,
     select_music_track = function()
-        return not Kivolatro_config.Kivolatro.Always_Drifting and Kivolatro_config.Kivolatro.track_292
+        if Kivolatro_config.Kivolatro.track_292 then
+            return 4
+        end
     end
 })
 

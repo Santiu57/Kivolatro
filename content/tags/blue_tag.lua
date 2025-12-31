@@ -26,7 +26,6 @@ SMODS.Tag {
     end,
     apply = function(self, tag, context)
         if context.type == "store_joker_modify" then
-            local _applied = nil
             if not context.card.edition and not context.card.temp_edition and context.card.ability.set == "Joker" then
                 local lock = tag.ID
                 G.CONTROLLER.locks[lock] = true
@@ -41,7 +40,6 @@ SMODS.Tag {
                     G.CONTROLLER.locks[lock] = nil
                     return true
                 end)
-                _applied = true
                 tag.triggered = true
             end
         end
