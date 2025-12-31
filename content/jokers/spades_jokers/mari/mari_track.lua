@@ -1,5 +1,5 @@
 SMODS.Joker {
-    key = 'mari_track', -- https://www.pixiv.net/en/artworks/128930986
+    key = 'mari_track', -- https://x.com/teatei_0424/status/1823680223789113584
     loc_txt = {
         name = '{V:1}Mari{} Track',
         text = {'{E:1,C:green}Retrigger{} {V:2}Student jokers{}', '{C:attention}#1#{} aditional times'}
