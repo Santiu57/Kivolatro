@@ -41,13 +41,16 @@ SMODS.Joker {
         end
         if context.setting_blind then
             G.GAME.blind:disable()
+            if context.retrigger_joker then
+                return
+            end
             return {
                 message = Kivolatro.haruka_voicelines[random_noise],
                 sound = Kivolatro.haruka_sound(random_noise),
                 colour = G.C.PURPLE
             }
         end
-        if context.end_of_round and context.cardarea == G.jokers or context.ending_shop then
+        if context.end_of_round and context.cardarea == G.jokers or context.ending_shop and not context.retrigger_joker then
             if Kivolatro.safe_get(G, "jokers") then
                 for i = 1, #G.jokers.cards do
                     if Kivolatro.isStudent(G.jokers.cards[i].config.center.rarity) and my_pos ~= i and

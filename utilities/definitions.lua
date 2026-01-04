@@ -127,7 +127,7 @@ Kivolatro.blinds = {"gregorius"}
 
 Kivolatro.vouchers = {}
 
-Kivolatro.tags = {"blue_tag", "student_tag", "fumo_tag"}
+Kivolatro.tags = {"blue_tag", "student_tag", "fumo_tag", "arm_tag"}
 
 Kivolatro.enhancements = {
     fan = {"mari", "sakurako", "mine"},

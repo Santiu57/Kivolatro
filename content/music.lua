@@ -1,6 +1,6 @@
 SMODS.Sound({
     key = "Seia_sw_music",
-    path = "Track_299_looped.ogg",
+    path = "city_seia.ogg",
     sync = true,
     pitch = 1,
     select_music_track = function()

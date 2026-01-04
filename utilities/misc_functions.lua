@@ -306,6 +306,9 @@ function Kivolatro.is_banned(key)
 end
 
 function Kivolatro.multiply_extras(joker, value)
+    if joker.ability.extra == nil then
+        return
+    end
     if type(joker.ability.extra) == "number" then
         joker.ability.extra = joker.ability.extra * value
         return

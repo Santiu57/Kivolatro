@@ -2,7 +2,7 @@ SMODS.Tag {
     atlas = "kivo_tags",
     pos = {
         x = 0,
-        y = 0
+        y = 1
     },
     config = {
         type = "store_joker_modify",

@@ -2,7 +2,7 @@ SMODS.Joker {
     key = 'chocolate_sister_figure',
     loc_txt = {
         name = 'Chocolate Sister Figure',
-        text = {'First card of played {C:blue}hand{}', "is {V:1}Blessed{}"}
+        text = {"{V:1}Bless the first", "card of every {C:blue}hand{}"}
     },
     atlas = 'Spades_Jokers',
     rarity = "kivo_choco",
