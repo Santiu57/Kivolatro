@@ -50,6 +50,18 @@ SMODS.Sound({
 })
 
 SMODS.Sound({
+    key = "KARAKURhythm_music",
+    path = "KARAKURhythm - quilt heron.mp3",
+    sync = true,
+    pitch = 1,
+    select_music_track = function()
+        if next(find_joker("j_kivo_mariuoh")) or next(find_joker("j_kivo_mariuoh")) then
+            return 8
+        end
+    end
+})
+
+SMODS.Sound({
     key = "track_1_music",
     path = "Track_1.ogg",
     sync = true,

@@ -108,3 +108,10 @@ SMODS.Atlas {
     px = 71,
     py = 95
 }
+
+SMODS.Atlas {
+    key = 'modicon',
+    px = 32,
+    py = 32,
+    path = 'modicon.png'
+}
