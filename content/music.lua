@@ -1,13 +1,12 @@
 SMODS.Sound({
     key = "Seia_sw_music",
     path = "city_seia.ogg",
-    sync = true,
     pitch = 1,
     select_music_track = function()
         if Kivolatro_config.Kivolatro.Always_Drifting then
             return 99
             else if next(find_joker("seia_drift")) or next(find_joker("j_kivo_seia_drift")) then
-                return 4
+                return 6
             end
         end
     end
@@ -16,7 +15,6 @@ SMODS.Sound({
 SMODS.Sound({
     key = "kikyou_music",
     path = "kikyou_music.ogg",
-    sync = true,
     pitch = 1,
     select_music_track = function()
         return not Kivolatro_config.Kivolatro.Always_Drifting and next(find_joker("mari_fumo")) or
@@ -27,7 +25,6 @@ SMODS.Sound({
 SMODS.Sound({
     key = "track_292_music",
     path = "track_292.ogg",
-    sync = true,
     pitch = 1,
     select_music_track = function()
         if Kivolatro_config.Kivolatro.track_292 then
@@ -39,7 +36,6 @@ SMODS.Sound({
 SMODS.Sound({
     key = "Gregorius_Symphony_music",
     path = "Gregorius_Symphony.ogg",
-    sync = true,
     pitch = 1,
     vol = 0.5,
     select_music_track = function()
@@ -52,68 +48,10 @@ SMODS.Sound({
 SMODS.Sound({
     key = "KARAKURhythm_music",
     path = "KARAKURhythm - quilt heron.mp3",
-    sync = true,
     pitch = 1,
     select_music_track = function()
         if next(find_joker("j_kivo_mariuoh")) or next(find_joker("j_kivo_mariuoh")) then
-            return 8
+            return 6
         end
-    end
-})
-
-SMODS.Sound({
-    key = "track_1_music",
-    path = "Track_1.ogg",
-    sync = true,
-    pitch = 1,
-    select_music_track = function()
-        if Kivolatro_config.blue_music and not Kivolatro_config.Kivolatro.Always_Drifting and
-                   Kivolatro.current_track == "track_1" then
-        return 7
-        end
-    end
-})
-
-SMODS.Sound({
-    key = "track_2_music",
-    path = "Track_2.ogg",
-    sync = true,
-    pitch = 1,
-    select_music_track = function()
-        return Kivolatro_config.blue_music and not Kivolatro_config.Kivolatro.Always_Drifting and
-                   Kivolatro.current_track == "track_2"
-    end
-})
-
-SMODS.Sound({
-    key = "track_3_music",
-    path = "Track_3.ogg",
-    sync = true,
-    pitch = 1,
-    select_music_track = function()
-        return Kivolatro_config.blue_music and not Kivolatro_config.Kivolatro.Always_Drifting and
-                   Kivolatro.current_track == "track_3"
-    end
-})
-
-SMODS.Sound({
-    key = "track_4_music",
-    path = "Track_4.ogg",
-    sync = true,
-    pitch = 1,
-    select_music_track = function()
-        return Kivolatro_config.blue_music and not Kivolatro_config.Kivolatro.Always_Drifting and
-                   Kivolatro.current_track == "track_4"
-    end
-})
-
-SMODS.Sound({
-    key = "track_5_music",
-    path = "Track_5.ogg",
-    sync = true,
-    pitch = 1,
-    select_music_track = function()
-        return Kivolatro_config.blue_music and not Kivolatro_config.Kivolatro.Always_Drifting and
-                   Kivolatro.current_track == "track_5"
     end
 })

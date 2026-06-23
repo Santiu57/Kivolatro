@@ -88,7 +88,7 @@ Kivolatro.student_Colors = {
 -- boss blinds colors
 
 Kivolatro.blinds_colors = {
-    greg = "8A82F1"
+    greg = "B9C5FE"
 }
 
 -- Gradients

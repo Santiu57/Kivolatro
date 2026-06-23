@@ -43,12 +43,12 @@ SMODS.Joker {
         if context.end_of_round and context.cardarea == G.jokers and not context.retrigger_joker then
             if SMODS.pseudorandom_probability(card, 'eat_or_die', G.GAME.probabilities.normal, card.ability.extra.odds,
                 'eat_or_die') then
-                if G.STAGE == G.STAGES.RUN then
-                    G.STATE = G.STATES.GAME_OVER
-                    G.STATE_COMPLETE = false
+                local my_pos = nil
+                for i = 1, #G.jokers.cards do
+                    if G.jokers.cards[i] == card then
+                        my_pos = i
+                    end
                 end
-            else
-                G:save_progress()
             end
             -- Apply negative if didnt die
             local my_pos = nil

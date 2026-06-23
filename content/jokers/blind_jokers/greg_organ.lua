@@ -92,12 +92,12 @@ SMODS.Joker {
             if context.before and body.facing == "Gregorius" then
                 G.GAME.blind.chips = G.GAME.blind.chips * 0.5
                 G.GAME.blind.chip_text = number_format(G.GAME.blind.chips)
-                G.HUD_blind:recalculate(Kivolatro.blinds_colors.greg)
+                G.HUD_blind:recalculate()
                 body.wave = "Red"
                 body.activated = true
                 return {
                     message = "Debuffed!",
-                    colour = HEX(Kivolatro.blinds_colors.greg)
+                    colour = HEX()
                 }
             end
             if context.joker_main and body.facing == "You" then
@@ -111,7 +111,7 @@ SMODS.Joker {
         if body.wave == "Red" and body.activated == false and context.before then
             G.GAME.blind.chips = G.GAME.blind.chips * 1.25
             G.GAME.blind.chip_text = number_format(G.GAME.blind.chips)
-            G.HUD_blind:recalculate(Kivolatro.blinds_colors.greg)
+            G.HUD_blind:recalculate()
             body.wave = "Green"
             body.activated = true
             return {
@@ -123,7 +123,7 @@ SMODS.Joker {
             if context.before and body.facing == "Gregorius" then
                 G.GAME.blind.chips = G.GAME.blind.chips * 1.5
                 G.GAME.blind.chip_text = number_format(G.GAME.blind.chips)
-                G.HUD_blind:recalculate(Kivolatro.blinds_colors.greg)
+                G.HUD_blind:recalculate()
                 body.wave = "Yellow"
                 body.activated = true
                 return {

@@ -2,7 +2,7 @@ SMODS.Joker {
     key = 'seia', -- art:https://www.pixiv.net/en/artworks/131012717
     loc_txt = {
         name = 'Seia',
-        text = {"After {C:attention}3{} rounds makes a", "random joker {V:1}negative{}", "{C:red,E:1}self destructs{}",
+        text = {"After {C:attention}#2#{} rounds makes a", "random joker {V:1}negative{}", "{C:red,E:1}self destructs{}",
                 "{C:inactive}(#1#/#2#){}"}
     },
     atlas = 'Spades_Jokers',
@@ -11,7 +11,7 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     blueprint_compat = true,
-    eternal_compat = true,
+    eternal_compat = false,
     perishable_compat = true,
     pos = {
         x = 6,
@@ -38,6 +38,9 @@ SMODS.Joker {
     end,
     calculate = function(self, card, context)
         if context.end_of_round and context.cardarea == G.jokers then
+            if card.ability.extra.current < card.ability.extra.needed then
+                card.ability.extra.current = card.ability.extra.current + 1
+            end
             local joker = Kivolatro.random_joker()
             if card.ability.extra.current == card.ability.extra.needed and #G.jokers.cards ~= 1 and
                 Kivolatro.all_jokers_edition(card) == false then
@@ -56,7 +59,10 @@ SMODS.Joker {
                 }
             else
                 if card.ability.extra.current < card.ability.extra.needed then
-                    card.ability.extra.current = card.ability.extra.current + 1
+                    if card.ability.extra.current == card.ability.extra.needed - 1 then
+                        local eval = function () return card.ability.extra.current >= card.ability.extra.needed - 1 end
+                        juice_card_until(card, eval, true)
+                    end
                     return {
                         message = "Recovering!",
                         colour = HEX(Kivolatro.colors.trinity)

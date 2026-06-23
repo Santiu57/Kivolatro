@@ -247,14 +247,25 @@ function Kivolatro.random_joker()
     return random_joker
 end
 
-function Kivolatro.undebuff_all_jokers()
+function Kivolatro.Joker(key)
     for i = 1, #G.jokers.cards do
-        G.jokers.cards[i]:set_debuff(false)
+        if G.jokers.cards[i].config.center.key == key then
+            return G.jokers.cards[i]
+        end
     end
 end
 
-function Kivolatro.undebuff_specific_joker(key)
-    SMODS.find_card(key, true):set_debuff(false)
+function Kivolatro.Set_all_jokers_debuff(set_debuff)
+    for i = 1, #G.jokers.cards do
+        G.jokers.cards[i]:set_debuff(set_debuff)
+    end
+end
+
+function Kivolatro.Set_joker_debuff(key, set_debuff)
+    local joker = Kivolatro.Joker(key)
+    if joker then
+        joker:set_debuff(set_debuff)
+    end
 end
 
 function Kivolatro.right_wave_color(wave)
@@ -638,7 +649,6 @@ function Kivolatro.find_music(key)
     end
 end
 
-local contador = 0
 -- Game:update functions
 local upd = Game.update
 function Game:update(dt)
@@ -713,30 +723,6 @@ function Game:update(dt)
         elseif p_kivo_q_booster.pos.y < 5 then
             p_kivo_q_booster.pos.x = 0
             p_kivo_q_booster.pos.y = p_kivo_q_booster.pos.y + 1
-        end
-    end
-
-    -- music manager
-    local current = SMODS.Sound:get_current_music()
-    if SMODS.Sound:get_current_music() then
-        Kivolatro.music.sound = Kivolatro.find_music(SMODS.Sound:get_current_music())
-        for k, v in pairs(SOURCES) do
-            if string.find(k, 'music') or 1 == 1 then
-                if v[1] and v[1].sound and v[1].sound:isPlaying() then
-                    Kivolatro.music.duration = v[1].sound:getDuration()
-                    Kivolatro.music.music = k
-                    Kivolatro.k = v[1]
-                end
-            end
-        end
-        contador = contador + dt
-        if Kivolatro.music.duration == nil then
-            Kivolatro.music.duration = 10
-        else
-            if contador >= Kivolatro.music.duration - 1.5 then
-                contador = 0
-                Kivolatro.current_track = Kivolatro.next_music()
-            end
         end
     end
 end

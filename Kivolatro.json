@@ -1,9 +1,10 @@
-
 {
 	"id": "kivolatro",
 	"name": "Kivolatro",
 	"display_name": "Kivolatro",
-	"author": ["Santiu57"],
+	"author": [
+		"Santiu57"
+	],
 	"description": "A BA mod",
 	"prefix": "kivo",
 	"main_file": "Kivolatro.lua",
